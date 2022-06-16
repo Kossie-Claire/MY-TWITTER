@@ -1,0 +1,170 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-page {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr min-content;
+}
+
+.left {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background: url(twitterbg.png);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    position: relative;
+}
+
+.left_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.left_content svg {
+    fill: #fff;
+    width: 120%;
+    height: 60%;
+    max-height: 3800px;
+}
+
+.right {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding: 20px;
+    min-width: 45vw;
+}
+
+.right-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    min-width: 437px;
+    max-width: 760px;
+    height: 100%;
+    width: 100%;
+}
+
+.right-site-wrapper {
+    padding-bottom: 12px;
+}
+
+.right-site-wrapper svg {
+    fill: rgb(29, 161, 242);
+}
+
+.right-middle-content {
+    flex: 1;
+}
+
+.middle-heading {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 48px;
+    margin-top: 48px;
+    letter-spacing: 3.8px;
+    line-height: 5px;
+    overflow-wrap: break-word;
+}
+
+.right-middle-content h5 {
+    font-size: 30px;
+    margin-bottom: 32px;
+    font-weight: 700;
+    line-height: 1.3125;
+    overflow-wrap: break-word;
+}
+
+.btn-link {
+    display: block;
+    font-size: 21px;
+    margin-bottom: 20px;
+    text-align: center;
+    min-width: calc(77.28px);
+    min-width: 380px;
+    padding-top: 13px;
+    padding-left: 12px;
+    padding-right: 32px;
+    border-radius: 9999px;
+}
+
+.sign-up-btn {
+    background-color: rgb(29, 161, 242);
+    color: #fff;
+    border: 0.1rem solid rgba(0, 0, 0, 0);
+    transition: background-color 0.3s;
+    border-radius: 2.5em;
+    width: 300px;
+}
+
+.sign-up-btn:hover {
+    background-color: rgb(29, 145, 218);
+    border-radius: 2.5em;
+    width: 300px;
+}
+
+.log-in-btn {
+    color: rgb(29, 161, 242);
+    background-color: #fff;
+    border: 0.1rem solid rgb(29, 161, 242);
+    transition: background-color 0.3s;
+    border-radius: 2.5em;
+    width: 300px;
+}
+
+.log-in-btn:hover {
+    background-color: rgb(29, 161, 242, 0.1);
+    border-radius: 2.5em;
+    width: 300px;
+}
+
+.main-page-footer {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    padding: 15px 16px;
+}
+
+.main-page-footer-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main-page-footer a {
+    color: rgb(91, 112, 131);
+    padding-right: 16px;
+    font-size: 16px;
+    margin-bottom: 1rem;
+    line-height: calc(19.6875px);
+}
+
+.main-page-footer a:hover {
+    text-decoration: underline;
+}
+
+.main-page-footer span {
+    color: rgb(91, 112, 131);
+    font-size: 16px;
+    line-height: calc(19.6875px);
+}
